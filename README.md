@@ -22,7 +22,7 @@ Simple node package for easy use of Redis Streams functionality. This package al
 Make sure you have NodeJs installed, then:
 
 ```bash
-npm install redis-streams-nodejs
+npm install redis-consumer
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ npm install redis-streams-nodejs
 ### Basic example
 
 ```typescript
-import { RedisClient } from 'redis-streams-nodejs';
+import { RedisClient } from 'redis-consumer';
 
 (async () => {
   // Client name must be unique per client
@@ -76,8 +76,8 @@ The `RedisClient` is an extension of the original client from the [node-redis](h
 const client = new RedisClient({
   socket: {
     port: 6380,
-    host: 'myredis.server.com',
-    tls: true,
+    host: 'localhost',
+    tls: false,
   },
   password: 'mysupersecurepassword',
   groupName: 'mygroup',
@@ -243,7 +243,7 @@ producer.add('mystream', message);
 This package has full Typescript support. See the example below on how to define a processing function with typed message data.
 
 ```typescript
-import { RedisClient, StreamsToListen, StreamMessageReply } from 'redis-streams-nodejs';
+import { RedisClient, StreamsToListen, StreamMessageReply } from 'redis-consumer';
 
 const client = new RedisClient({
   groupName: 'mygroup',

@@ -229,7 +229,7 @@ export class RedisConsumer<S extends RedisScripts = RedisScripts> {
   private async acknowlegdeMessages() {
     for (const item of this.successfullMessages) {
       const stream = item[0];
-      const ackMessages = item[1];;
+      const ackMessages = item[1];
       const id = await this.originalClient.xAck(stream, this.originalClient.groupName, ackMessages);
       if (id){
         this.successfullMessages.delete(stream);
