@@ -1,6 +1,6 @@
 {
   "name": "redis-consumer",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Simple NodeJs consumer and producer for Redis Streams",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Seboeb/redis-streams-nodejs.git"
+    "url": "git+https://github.com/tomasky/redis-streams-nodejs.git"
   },
   "author": "Sebastiaan Hekner",
   "keywords": [
@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/Seboeb/redis-streams-nodejs/issues"
   },
-  "homepage": "https://github.com/Seboeb/redis-streams-nodejs#readme",
+  "homepage": "https://github.com/tomasky/redis-streams-nodejs#readme",
   "dependencies": {
     "redis": "^4.6.10"
   },

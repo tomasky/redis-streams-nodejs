@@ -1,4 +1,4 @@
-# redis-streams-nodejs
+# redis-consumer
 
 Simple node package for easy use of Redis Streams functionality. This package allows for creation of a Redis consumer and producer.
 
